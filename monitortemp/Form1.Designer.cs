@@ -45,6 +45,7 @@
             this.btstart = new System.Windows.Forms.Button();
             this.tbotchet = new System.Windows.Forms.TextBox();
             this.tbotchetinfo = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lbvid
@@ -78,7 +79,7 @@
             // lbdata
             // 
             this.lbdata.AutoSize = true;
-            this.lbdata.Location = new System.Drawing.Point(53, 165);
+            this.lbdata.Location = new System.Drawing.Point(53, 172);
             this.lbdata.Name = "lbdata";
             this.lbdata.Size = new System.Drawing.Size(33, 13);
             this.lbdata.TabIndex = 7;
@@ -177,21 +178,31 @@
             this.tbotchet.Location = new System.Drawing.Point(56, 246);
             this.tbotchet.Multiline = true;
             this.tbotchet.Name = "tbotchet";
-            this.tbotchet.Size = new System.Drawing.Size(400, 192);
+            this.tbotchet.Size = new System.Drawing.Size(400, 634);
             this.tbotchet.TabIndex = 28;
             // 
             // tbotchetinfo
             // 
             this.tbotchetinfo.Location = new System.Drawing.Point(136, 220);
             this.tbotchetinfo.Name = "tbotchetinfo";
-            this.tbotchetinfo.Size = new System.Drawing.Size(491, 20);
+            this.tbotchetinfo.Size = new System.Drawing.Size(652, 20);
             this.tbotchetinfo.TabIndex = 29;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd.MM.yyyy HH:m";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(136, 172);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 33;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 840);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.tbotchetinfo);
             this.Controls.Add(this.tbotchet);
             this.Controls.Add(this.btstart);
@@ -235,6 +246,7 @@
         private System.Windows.Forms.Button btstart;
         private System.Windows.Forms.TextBox tbotchet;
         private System.Windows.Forms.TextBox tbotchetinfo;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
